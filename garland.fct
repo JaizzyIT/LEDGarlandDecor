@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"garland.c" LINE:93
+timer2_ovf_int DSTACK_USAGE:5 DSTACK_LEVEL:5 FILE:"garland.c" LINE:64

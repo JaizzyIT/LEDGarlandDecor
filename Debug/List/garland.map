@@ -1,0 +1,39 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+eeprom_timer                                                                      0x0070       2
+change_timer                                                                      0x0072       2
+pause_top                                                                         0x0074       2
+br_to_ps_range                                                                    0x0076       2
+bright_increase                                                                   0x0078       1
+freq_increase                                                                     0x0079       1
+butt_pressed                                                                      0x007A       1
+blink                                                                             0x007B       1
+LED_change                                                                        0x007C       1
+save_to_eeprom                                                                    0x007D       1
+pause                                                                             0x007E       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+eeprom_bright                                                                     0x0000       1
+eeprom_freq                                                                       0x0001       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+brightness                                                                        R4           1
+brightness_prev                                                                   R5           1
+blink_max_bright                                                                  R6           1
+frequency                                                                         R7           1
+frequency_prev                                                                    R8           1
+butt_timer                                                                        R9,R10       2
+pause_timer                                                                       R11,R12      2
+blink_timer                                                                       R13,R14      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer2_ovf_int                                                                    0x0001C     62
+pause_calc                                                                        0x0005A     21
+main                                                                              0x0006F    220
